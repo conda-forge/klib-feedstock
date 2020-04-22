@@ -1,5 +1,5 @@
 {% set name = "klib" %}
-{% set version = "0.0.69" %}
+{% set version = "0.0.70" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,11 +7,11 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 17611d0416af42d034d3532c624fde45677af45a0adc8edb83dd1556979961df
+  sha256: acc512d8d33f4d4c3594a1ce45c2e7df6cfd8703132ce3dec378c274522370a1
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -39,7 +39,6 @@ about:
   home: "https://github.com/akanz1/klib"
   license: MIT
   license_family: MIT
-  # https://github.com/akanz1/klib/issues/1
   license_file: LICENSE
   summary: "Customized data preprocessing functions for frequent tasks."
   dev_url: "https://github.com/akanz1/klib"
