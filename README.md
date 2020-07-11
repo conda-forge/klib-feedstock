@@ -5,7 +5,7 @@ Home: https://github.com/akanz1/klib
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Customized data preprocessing functions for frequent tasks.
 
