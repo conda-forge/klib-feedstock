@@ -1,5 +1,5 @@
 {% set name = "klib" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,32 +7,27 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: de5a292b0a36a41abba225574aac6b0c79ba208caba6b305501984842cf1f20f
+  sha256: f52de4f4c8b1cd0a5651a987fc867728e945808ef3935aea72d63c0e56f90d35
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
-
-requirements:
-  host:
-    - pip
+	@@ -20,19 +20,19 @@ requirements:
     - python >=3.7
     - setuptools
     - matplotlib >=3.0.3
-    - numpy >=1.15.4
-    - pandas >=1.1
+    - numpy >=1.16.3
+    - pandas >=1.1.2
     - seaborn >=0.11.1
-    - scikit-learn >=0.23
-    - scipy >=1.0.0
+    - scikit-learn >=0.23.1
+    - scipy >=1.1.0
   run:
     - python >=3.7
     - matplotlib-base >=3.0.3
-    - numpy >=1.15.4
-    - pandas >=1.1
+    - numpy >=1.16.3
+    - pandas >=1.1.2
     - seaborn >=0.11.1
-    - scikit-learn >=0.23
-    - scipy >=1.0.0
+    - scikit-learn >=0.23.1
+    - scipy >=1.1.0
 
 test:
   imports:
