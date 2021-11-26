@@ -11,7 +11,6 @@ source:
 
 build:
   noarch: python
-	@@ -20,19 +20,19 @@ requirements:
     - python >=3.7
     - setuptools
     - matplotlib >=3.0.3
