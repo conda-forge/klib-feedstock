@@ -34,6 +34,11 @@ requirements:
     - scikit-learn >=0.23.1
     - scipy >=1.1.0
 
+test:
+  source_files:
+    - tests
+  imports:
+    - klib
 
 about:
   home: https://github.com/akanz1/klib
