@@ -18,7 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.7
-    - setuptools
+    - poetry-core >=1.0.7,<1.1.0
     - matplotlib >=3.0.3
     - numpy >=1.16.3
     - pandas >=1.1.2
@@ -37,7 +37,7 @@ requirements:
 test:
   imports:
     - klib
-    - klib.tests
+    - tests
 
 about:
   home: https://github.com/akanz1/klib
