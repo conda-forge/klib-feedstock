@@ -18,7 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.8
-    - poetry >=1.2.0
+    - poetry-core
     - matplotlib >=3.0.3
     - numpy >=1.16.3
     - pandas >=1.2.0
