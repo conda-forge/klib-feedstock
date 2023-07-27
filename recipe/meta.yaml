@@ -1,5 +1,5 @@
 {% set name = "klib" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 929b7de2023335e64e245a29be1b78b345989e94551432fbdc51e056cd28f46a
+  sha256: e8bc9d9beb5b480272baad16146b78fa019c566233b97ede5682e24eb9c4bfe9
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - plotly >=5.2.2
     - python >=3.8
     - scipy >=1.1.0
-    - screeninfo = >=0.8.1
+    - screeninfo >=0.8.1
     - seaborn >=0.11.2
 
 test:
