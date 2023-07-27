@@ -1,5 +1,5 @@
 {% set name = "klib" %}
-{% set version = "1.0.7" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 51ae422391aa77980c7e1586aa9f0fcfc83f4db00a10481617e7b67a3f44add2
+  sha256: 929b7de2023335e64e245a29be1b78b345989e94551432fbdc51e056cd28f46a
 
 build:
   noarch: python
@@ -19,18 +19,15 @@ requirements:
     - pip
     - python >=3.8
     - poetry-core
-    - matplotlib >=3.0.3
-    - numpy >=1.16.3
-    - pandas >=1.2.0
-    - seaborn >=0.11.1
-    - scipy >=1.1.0
   run:
-    - python >=3.8
     - matplotlib-base >=3.0.3
     - numpy >=1.16.3
     - pandas >=1.2.0
-    - seaborn >=0.11.2
+    - plotly >=5.2.2
+    - python >=3.8
     - scipy >=1.1.0
+    - screeninfo = >=0.8.1
+    - seaborn >=0.11.2
 
 test:
   source_files:
@@ -43,7 +40,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: Customized data preprocessing functions for frequent tasks.
+  summary: Easy to use Python library of customized functions for cleaning and analyzing data.
   dev_url: https://github.com/akanz1/klib
 
 extra:
