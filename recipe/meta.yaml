@@ -1,5 +1,5 @@
 {% set name = "klib" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e8bc9d9beb5b480272baad16146b78fa019c566233b97ede5682e24eb9c4bfe9
+  sha256: 1ec0d1ab8486a65381a73fc391d37a8e5b109bd44c07c44f7a2c66139eb77cb8
 
 build:
   noarch: python
