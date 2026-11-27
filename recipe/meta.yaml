@@ -1,6 +1,6 @@
 {% set name = "klib" %}
-{% set version = "1.4.1" %}
-{% set python_min = "3.10" %}
+{% set version = "1.5.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 775e4f44bbfd6807bbb8fcaa183820054c7a52585aa40d62491ab9e0c8c35139
+  sha256: 4bf9f45e594aae719f7410acd6d0987f0dabc38e146bc659b063d19f7439a9e9
 
 build:
   noarch: python
@@ -22,9 +22,9 @@ requirements:
     - hatchling
   run:
     - matplotlib-base >=3.9.0
-    - Jinja2 >=3.1.0
+    - Jinja2 >=3.1.2
     - numpy >=2.0.0
-    - pandas >=1.4,<4.0
+    - pandas >=2.2.2,<4.0
     - plotly >=5.24.0
     - python >={{ python_min }}
     - scipy >=1.14.0
